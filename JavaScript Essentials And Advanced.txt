@@ -1,0 +1,131 @@
+Que 1 : What is JavaScript?
+Ans 1 :
+JavaScript is the Programming Language for the Web.
+JavaScript can update and change both HTML and CSS.
+JavaScript can calculate, manipulate and validate data.
+
+
+Que 2 : What is the use of isNaN function?
+Ans 2 :
+The isNaN() function determines whether a value is NaN when converted to a number. Because coercion inside the isNaN() function can be surprising, you may alternatively want to use Number.isNaN() .
+
+
+Que 3 : What is negative Infinity?
+Ans 3 :
+NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript
+
+
+Que 4 : Which company developed JavaScript?
+Ans 4 :
+JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser.
+
+
+Que 5 : What are undeclared and undefined variables?
+Ans 5 :
+Undeclared variables are those that have not been declared or defined in the current scope, while undefined variables are those that have been declared but not given a value.
+
+
+Que 6 : Write the code for adding new elements dynamically?
+Ans 6 :
+<body>
+    <div class="button">
+        <button id="addTask">Add task</button>
+    </div>
+    <div class="tasks"></div>
+    <script type="text/javascript">
+  
+        // Getting the parent element in which
+        // the new div will be created
+        let task = document.getElementsByClassName("tasks");
+  
+        // Getting the addTask button element
+        let addTask = document.getElementById("addTask");
+          
+        // Adding onclick event to the button
+        addTask.addEventListener('click', function () {
+      
+            // Traversing through collection of HTML
+            // elements (tasks here)
+            for (let i = 0; i < task.length; i++) {
+                  
+                // New div element is created  
+                let newDiv = document.createElement("div");
+                      
+                // Setting the attribute of class type to newDiv 
+                newDiv.setAttribute("class", "list");
+                     
+                // innerText used to write the text in newDiv 
+                newDiv.innerText = "New Div created";
+                       
+                // Finally append the newDiv to the
+                // parent i.e. tasks   
+                task[i].append(newDiv);
+            }
+        })
+    </script>
+</body>
+
+
+Que 7 : What is the difference between ViewState and SessionState?
+Ans 7 :
+Session state is saved on the server, ViewState is saved in the page. Session state is usually cleared after a period of inactivity from the user. The view state is posted on subsequent post back in a hidden field.
+
+
+Que 8 : What is === operator?
+Ans 8 :
+Just like double equal operator === also used to compare two values on left and right. This will also return true or false based on comparison. Triple equal operator is also common used in if else conditions, while loops and some other places in code.
+
+
+Que 9 : How can the style/class of an element be changed?
+Ans 9 :
+Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .
+
+
+Que 10 : How to read and write a file using JavaScript?
+Ans 10 :
+There are two ways to do it:
+
+1. Using JavaScript extensions (runs from JavaScript Editor), or
+
+2. Using a web page and ActiveX objects (Internet Explorer only).
+
+
+Que 11 : What are all the looping structures in JavaScript?
+Ans 11 :
+JavaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+for/of - loops through the values of an iterable object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true
+
+
+Que 12 : How can you convert the string of any base to an integer in JavaScript?
+Ans 12 :
+To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. parseInt() function returns Nan( not a number) when the string doesn't contain number. If a string with a number is sent, then only that number will be returned as the output.
+
+
+Que 13 : What is the function of the delete operator?
+Ans 13 :
+The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+
+
+Que 14 : What are all the types of Pop up boxes available in JavaScript?
+Ans 14 :
+JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+
+Que 15 : What is the use of Void (0)?
+Ans 15 :
+JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+
+Que 16 : How can a page be forced to load another page in JavaScript?
+Ans 16 :
+In JavaScript, we can use window. location object to force a page to load another page. We can use the location object to set the URL of a new page.
+
+
+Que 17 : What are the disadvantages of using innerHTML in JavaScript? 
+Ans 17 :
+Inner HTML is slow because when we use the inner HTML property in the code it allows us to change using the JavaScript language. It is very slow because as inner HTML already parses the content even we have to parse the content again so that’s why it takes time.
